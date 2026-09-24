@@ -1,0 +1,104 @@
+{
+  "title": "sample_report report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "1 input file(s) processed",
+    "0 tabular row(s) analyzed",
+    "87 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 1,
+    "content_chars": 87,
+    "keywords": [
+      [
+        "quarterly",
+        1
+      ],
+      [
+        "review",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "open",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "needs",
+        1
+      ],
+      [
+        "follow-up",
+        1
+      ]
+    ],
+    "kinds": [
+      "document"
+    ]
+  },
+  "analysis": {
+    "tables": [],
+    "keywords": [
+      [
+        "quarterly",
+        1
+      ],
+      [
+        "review",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "open",
+        1
+      ],
+      [
+        "pipeline",
+        1
+      ],
+      [
+        "needs",
+        1
+      ],
+      [
+        "follow-up",
+        1
+      ]
+    ],
+    "text_preview": "Quarterly Review\nRevenue grew in the West region and the open pipeline needs follow-up."
+  }
+}

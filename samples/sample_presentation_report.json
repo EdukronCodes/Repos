@@ -1,0 +1,72 @@
+{
+  "title": "sample_presentation report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "1 input file(s) processed",
+    "0 tabular row(s) analyzed",
+    "49 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 1,
+    "content_chars": 49,
+    "keywords": [
+      [
+        "quarterly",
+        1
+      ],
+      [
+        "review",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "region",
+        1
+      ]
+    ],
+    "kinds": [
+      "presentation"
+    ]
+  },
+  "analysis": {
+    "tables": [],
+    "keywords": [
+      [
+        "quarterly",
+        1
+      ],
+      [
+        "review",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "grew",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "region",
+        1
+      ]
+    ],
+    "text_preview": "Quarterly Review\nRevenue grew in the West region."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "title": "sample_sales report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "1 input file(s) processed",
+    "4 tabular row(s) analyzed",
+    "78 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 1,
+    "content_chars": 78,
+    "keywords": [
+      [
+        "east",
+        2
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "orders",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "south",
+        1
+      ]
+    ],
+    "kinds": [
+      "table"
+    ]
+  },
+  "analysis": {
+    "tables": [
+      {
+        "name": "sample_sales",
+        "rows": 4,
+        "columns": [
+          "region",
+          "revenue",
+          "orders"
+        ],
+        "numeric": [
+          {
+            "column": "revenue",
+            "mean": 13500.0,
+            "minimum": 9000.0,
+            "maximum": 18000.0,
+            "total": 54000.0
+          },
+          {
+            "column": "orders",
+            "mean": 43.0,
+            "minimum": 27.0,
+            "maximum": 55.0,
+            "total": 172.0
+          }
+        ],
+        "categorical": [
+          {
+            "column": "region",
+            "top": [
+              [
+                "East",
+                2
+              ],
+              [
+                "West",
+                1
+              ],
+              [
+                "South",
+                1
+              ]
+            ]
+          }
+        ],
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      }
+    ],
+    "keywords": [
+      [
+        "east",
+        2
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "orders",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "south",
+        1
+      ]
+    ],
+    "text_preview": "region,revenue,orders\nEast,12000,42\nWest,18000,55\nEast,15000,48\nSouth,9000,27\n"
+  }
+}

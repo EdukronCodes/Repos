@@ -1,0 +1,56 @@
+{
+  "title": "sample_archive report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "1 input file(s) processed",
+    "0 tabular row(s) analyzed",
+    "50 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 1,
+    "content_chars": 50,
+    "keywords": [
+      [
+        "archive",
+        1
+      ],
+      [
+        "members",
+        1
+      ],
+      [
+        "sample_notes",
+        1
+      ],
+      [
+        "sample_sales",
+        1
+      ]
+    ],
+    "kinds": [
+      "archive"
+    ]
+  },
+  "analysis": {
+    "tables": [],
+    "keywords": [
+      [
+        "archive",
+        1
+      ],
+      [
+        "members",
+        1
+      ],
+      [
+        "sample_notes",
+        1
+      ],
+      [
+        "sample_sales",
+        1
+      ]
+    ],
+    "text_preview": "Archive members:\nsample_notes.txt\nsample_sales.csv"
+  }
+}

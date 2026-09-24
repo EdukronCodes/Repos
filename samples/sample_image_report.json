@@ -1,0 +1,48 @@
+{
+  "title": "sample_image report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "1 input file(s) processed",
+    "0 tabular row(s) analyzed",
+    "31 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 1,
+    "content_chars": 31,
+    "keywords": [
+      [
+        "image",
+        1
+      ],
+      [
+        "x360",
+        1
+      ],
+      [
+        "unavailable",
+        1
+      ]
+    ],
+    "kinds": [
+      "image"
+    ]
+  },
+  "analysis": {
+    "tables": [],
+    "keywords": [
+      [
+        "image",
+        1
+      ],
+      [
+        "x360",
+        1
+      ],
+      [
+        "unavailable",
+        1
+      ]
+    ],
+    "text_preview": "Image: 640x360; OCR unavailable"
+  }
+}

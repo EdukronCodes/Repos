@@ -1,0 +1,186 @@
+{
+  "title": "sample_workbook report",
+  "goal": "Summarize key findings in this sample file.",
+  "overview": [
+    "2 input file(s) processed",
+    "7 tabular row(s) analyzed",
+    "117 content character(s) indexed"
+  ],
+  "understanding": {
+    "file_count": 2,
+    "content_chars": 117,
+    "keywords": [
+      [
+        "east",
+        2
+      ],
+      [
+        "open",
+        2
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "orders",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "south",
+        1
+      ],
+      [
+        "status",
+        1
+      ],
+      [
+        "count",
+        1
+      ],
+      [
+        "closed",
+        1
+      ]
+    ],
+    "kinds": [
+      "table",
+      "table"
+    ]
+  },
+  "analysis": {
+    "tables": [
+      {
+        "name": "Sales",
+        "rows": 4,
+        "columns": [
+          "region",
+          "revenue",
+          "orders"
+        ],
+        "numeric": [
+          {
+            "column": "revenue",
+            "mean": 13500.0,
+            "minimum": 9000.0,
+            "maximum": 18000.0,
+            "total": 54000.0
+          },
+          {
+            "column": "orders",
+            "mean": 43.0,
+            "minimum": 27.0,
+            "maximum": 55.0,
+            "total": 172.0
+          }
+        ],
+        "categorical": [
+          {
+            "column": "region",
+            "top": [
+              [
+                "East",
+                2
+              ],
+              [
+                "West",
+                1
+              ],
+              [
+                "South",
+                1
+              ]
+            ]
+          }
+        ],
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      },
+      {
+        "name": "Pipeline",
+        "rows": 3,
+        "columns": [
+          "status",
+          "count"
+        ],
+        "numeric": [
+          {
+            "column": "count",
+            "mean": 15.0,
+            "minimum": 8.0,
+            "maximum": 25.0,
+            "total": 45.0
+          }
+        ],
+        "categorical": [
+          {
+            "column": "status",
+            "top": [
+              [
+                "Open",
+                2
+              ],
+              [
+                "Closed",
+                1
+              ]
+            ]
+          }
+        ],
+        "missing_cells": 0,
+        "duplicate_rows": 0
+      }
+    ],
+    "keywords": [
+      [
+        "east",
+        2
+      ],
+      [
+        "open",
+        2
+      ],
+      [
+        "region",
+        1
+      ],
+      [
+        "revenue",
+        1
+      ],
+      [
+        "orders",
+        1
+      ],
+      [
+        "west",
+        1
+      ],
+      [
+        "south",
+        1
+      ],
+      [
+        "status",
+        1
+      ],
+      [
+        "count",
+        1
+      ],
+      [
+        "closed",
+        1
+      ]
+    ],
+    "text_preview": "region,revenue,orders\nEast,12000,42\nWest,18000,55\nEast,15000,48\nSouth,9000,27\n\nstatus,count\nOpen,12\nClosed,25\nOpen,8\n"
+  }
+}
