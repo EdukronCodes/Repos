@@ -6,17 +6,10 @@ reviews the result, and publishes structured reports.
 
 ## Agents and Shared State
 
-- `Supervisor`: understands the user goal, creates the workflow plan, and
 	initializes shared memory.
-- `File Ingestion Agent`: parses Excel/XLSX, CSV, PDF, DOCX, PPTX, text, images,
 	media, and ZIP inputs.
-- `Content Understanding Agent`: extracts text, keywords, document kinds, and
 	retrieves relevant context from the in-memory vector store.
-- `Analysis Agent`: calculates table statistics, distributions, missing values,
 	duplicates, keywords, and optional web context.
-- `Report Generation Agent`: creates the report model and optional charts.
-- `Quality Review Agent`: validates completeness before delivery.
-- `Shared Memory / State`: LangGraph state passes the plan, documents, tables,
 	findings, and review results between agents.
 
 Tool integrations are represented by `FileParsers`, `OCR`, `SpeechToText`,
@@ -67,4 +60,39 @@ Use `POST /reports` with a multipart `file`, optional `goal`, `title`, and
 ```text
 Input files -> Supervisor -> Ingestion -> Understanding -> Analysis -> Report
 Generation -> Quality Review -> Generated reports
+```
+
+# File Intelligence
+
+Streamlit UI and LangGraph multi-agent system for analyzing uploaded files and generating structured reports.
+
+## Run the UI
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Upload a supported document, spreadsheet, media, image, archive, or text file. The report runs automatically and can be downloaded as PDF, DOCX, XLSX, CSV, PPTX, HTML, Markdown, or JSON.
+
+The UI includes an **Execution flow** tab with the visual agent graph. See [PROJECT_REPORT.md](PROJECT_REPORT.md) for the end-to-end architecture, state contract, execution trace, output matrix, and validation plan. Generate test fixtures with `python samples/generate_samples.py`; the inventory is documented in [samples/README.md](samples/README.md).
+
+## Agents
+
+- `Supervisor`: creates the goal and workflow plan.
+- `File Ingestion Agent`: loads every workbook sheet into shared state.
+- `Content Understanding Agent`: indexes content and extracts keywords.
+- `Analysis Agent`: calculates numeric summaries, missing cells, and duplicates.
+- `Report Generation Agent`: builds the report model.
+- `Quality Review Agent`: checks report completeness.
+- `Delivery Agent`: publishes the selected download format.
+
+The implementation is split into `report_system/state.py`, `parsing.py`, `agents.py`, `publishing.py`, and `graph.py`. LangGraph passes the typed shared state between each agent.
+
+## CLI
+
+```bash
+python excel_report.py input.xlsx --format xlsx --output report.xlsx --goal "Summarize revenue by region"
 ```
